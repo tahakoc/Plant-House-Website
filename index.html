@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Inter:wght@200;400;800&family=Lemon&family=Open+Sans:wght@400;600&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,200;1,400&display=swap');
-        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;800&display=swap');
+    </style>
+
     <title>Plant House</title>
 </head>
+
 <body>
     <div class="header">
         <div class="logo">
-                    
-                <svg width="90" height="92" viewBox="0 0 147 149" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <ellipse cx="73.5" cy="74.5" rx="73.5" ry="74.5" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_1_7" transform="translate(-1.67258e-09 0.021579) scale(0.00462963 0.00456749)"/>
-                    </pattern>
-                    <image id="image0_1_7" width="216" height="233" xlink:href="data:image/jpeg;base64,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"/>
-                    </defs>
-                </svg>
 
-               <h2 class="başlık">Plant House</h2>
+            <svg width="90" height="92" viewBox="0 0 147 149" fill="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <ellipse cx="73.5" cy="74.5" rx="73.5" ry="74.5" fill="url(#pattern0)" />
+                <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_1_7"
+                            transform="translate(-1.67258e-09 0.021579) scale(0.00462963 0.00456749)" />
+                    </pattern>
+                    <image id="image0_1_7" width="216" height="233"
+                        xlink:href="data:image/jpeg;base64,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" />
+                </defs>
+            </svg>
+
+            <h2 class="başlık">Plant House</h2>
         </div>
-        
+
         <div class="menu">
             <ul>
                 <li>Home</li>
@@ -37,7 +45,7 @@
                 <li>Contact</li>
             </ul>
         </div>
-            
+
     </div>
 
     <div class="container-1">
@@ -48,28 +56,29 @@
             </div>
             <p>All carbon in proteins, fats and carbohydrates is derived from photosynthesis in plants.
                 Everything we eat,
-                 including meat from animals (which feed on plants) is a result of plants using the energy in sunlight to take carbon dioxide and create complex carbon-containing molecules.
+                including meat from animals (which feed on plants) is a result of plants using the energy in sunlight to
+                take carbon dioxide and create complex carbon-containing molecules.
             </p>
 
-           <div class="button">
-            <button class="btn-1">Learn More</button>
-            <button class="btn-2">GET STARTED</button>
-           </div>
+            <div class="button">
+                <button class="btn-1">Learn More</button>
+                <button class="btn-2">GET STARTED</button>
+            </div>
         </div>
 
         <div class="block-2">
-            
-                <img src="/İMG/Ellipse 7.png" alt="">
-            
+
+            <img src="/İMG/Ellipse 7.png" alt="">
+
         </div>
 
     </div>
 
     <div class="container-2">
         <div class="carts">
-           
+
             <div class="cart-1">
-                <img  src="/İMG/Ellipse 3.png" alt="">
+                <img src="/İMG/Ellipse 3.png" alt="">
                 <div class="ınfarmation">
                     <h2>Large Plants</h2>
                     <p>The plants that are likely
@@ -77,33 +86,33 @@
                         multicellular land plants,
                         called embryophytes.
                     </p>
-                   <div class="i"> <i class="fa-sharp fa-solid fa-arrow-right"></i></div>
-                        
+                    <div class="i"> <i class="fa-sharp fa-solid fa-arrow-right"></i></div>
+
                 </div>
             </div>
 
             <div class="cart-2">
-                <img  src="/İMG/Ellipse 4.png" alt="">
+                <img src="/İMG/Ellipse 4.png" alt="">
                 <div class="ınfarmation">
                     <h2>Small Plants</h2>
                     <p>Plants provide us with food,
-                         fiber, shelter,
-                         medicine, and fuel.
-                         
+                        fiber, shelter,
+                        medicine, and fuel.
+
 
                     </p>
                     <div class="i"> <i class="fa-sharp fa-solid fa-arrow-right"></i></div>
-                   
+
                 </div>
             </div>
 
             <div class="cart-3">
-                <img  src="/İMG/Ellipse 5.png" alt="">
+                <img src="/İMG/Ellipse 5.png" alt="">
                 <div class="ınfarmation">
                     <h2>Sedds</h2>
                     <p>
                         A seed is an embryonic plant enclosed
-                         in a protective outer covering, 
+                        in a protective outer covering,
                         along with a food reserve.
 
                     </p>
@@ -113,83 +122,126 @@
             </div>
 
             <button class="cart-btn">Explore More Categories</button>
-            
+
         </div>
         <div class="video">
             <img src="/İMG/video-back.png" alt="">
             <div class="backround">
                 <i class="fa-solid fa-circle-play"></i>
             </div>
-            
+
             <!---
          <video class="video-2"  controls
              src="/bandicam 2022-11-25 14-22-26-620.mp4">
             </video>-->
             <h2>Today's Deals</h2>
         </div>
-        
+
 
 
     </div>
-  <div class="container-3">
-    <div class="carts">
-        <div class="cart-1">
-            <img src="/İMG/Ellipse 11.png" alt="">
-            <div class="icons">
-                <div class="icon-1"><i class="fa-solid fa-cart-shopping"></i></div>
-                <div class="icon-2"><i class="fa-solid fa-heart"></i></div>
+    <div class="container-3">
+        <div class="carts">
+            <div class="cart-1">
+                <img src="/İMG/Ellipse 11.png" alt="">
+                <div class="icons">
+                    <div class="icon-1"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="icon-2"><i class="fa-solid fa-heart"></i></div>
+                </div>
+                <h3>Small Plants</h3>
+                <p>
+
+                    The plants that are likely
+                    most familiar to us are the multicellular
+                    land plants,
+                    called embryophytes.
+                </p>
+
+                <h1 class="fee">$80</h1>
+
             </div>
-            <h3>Small Plants</h3>
-            <p>
-                
-                The plants that are likely 
-                most familiar to us are the multicellular
-                 land plants,
-                 called embryophytes.
-            </p>
 
-            <h1 class="fee">$80</h1>
+            <div class="cart-2">
+                <img src="/İMG/Ellipse 12.png" alt="">
+                <div class="icons">
+                    <div class="icon-1"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="icon-2"><i class="fa-solid fa-heart"></i></div>
+                </div>
+                <h3>Plants</h3>
+                <p>
 
-        </div>
+                    Plants provide us with food,
+                    fiber, shelter, medicine, and fuel.
 
-        <div class="cart-2">
-            <img src="/İMG/Ellipse 12.png" alt="">
-            <div class="icons">
-                <div class="icon-1"><i class="fa-solid fa-cart-shopping"></i></div>
-                <div class="icon-2"><i class="fa-solid fa-heart"></i></div>
+                </p>
+
+                <h1 class="fee">$100</h1>
+
             </div>
-            <h3>Plants</h3>
-            <p>
-               
-                Plants provide us with food,
-                 fiber, shelter, medicine, and fuel.
-               
-            </p>
 
-            <h1 class="fee">$100</h1>
+            <div class="cart-3">
+                <img src="/İMG/Ellipse 13.png" alt="">
+                <div class="icons">
+                    <div class="icon-1"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="icon-2"><i class="fa-solid fa-heart"></i></div>
+                </div>
+                <h3>Seeds</h3>
+                <p>
 
-        </div>
+                    A seed is an embryonic plant enclosed
+                    in a protective outer covering,
+                    along with a food reserve.
 
-        <div class="cart-3">
-            <img src="/İMG/Ellipse 13.png" alt="">
-            <div class="icons">
-                <div class="icon-1"><i class="fa-solid fa-cart-shopping"></i></div>
-                <div class="icon-2"><i class="fa-solid fa-heart"></i></div>
+                </p>
+
+                <h1 class="fee">$50</h1>
+
             </div>
-            <h3>Seeds</h3>
-            <p>
-                
-                A seed is an embryonic plant enclosed
-                in a protective outer covering,
-                 along with a food reserve.
-               
-            </p>
-
-            <h1 class="fee">$50</h1>
-
+            <button class="btn">View More</button>
         </div>
     </div>
-  </div>
 
+    <div class="container-4">
+        <img src="/İMG/Ellipse 6.png" alt="">
+
+        <div class="part">
+            <h2>Plants</h2>
+            <p>
+                Plants provide us with food, fiber,
+                shelter, medicine, and fuel. The basic
+                food for all organisms is produced by
+                green plants. In the process of food
+                production, oxygen is released.
+            </p>
+
+            <h3>Social Media</h3>
+            <div class="icons">
+                <a href="https://www.instagram.com/"><img class="instagram" src="/İMG/instagram.svg" ></a>
+               <a href="https://www.facebook.com/"> <img class="facebook" src="/İMG/facebook.svg" alt=""></a>
+                <img class="twitter" src="/İMG/twitter.svg" alt="">
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="footer">
+
+
+
+
+        <h3>Copyright @ 2022 Plant House | All Rights Reserved</h3>
+        <div class="menu-2">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Store</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+    </div>
 </body>
+
 </html>
